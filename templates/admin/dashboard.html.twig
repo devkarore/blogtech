@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AdminController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h5 class="text-white mb-4">Administration</h5>
+
+    <ul class="nav flex-column">          
+        <li class="nav-item"> 
+            <a class="nav-link text-white" href="{{ path('app_admin_article_index') }}"> Articles </a> 
+        </li> 
+        <li class="nav-item"> 
+            <a class="nav-link text-white" href="{{ path('app_admin_category_index') }}"> Catégories </a> 
+        </li> 
+        <li class="nav-item"> 
+            <a class="nav-link text-white" href="{{ path('app_admin_comment_index') }}"> Commentaires </a> 
+        </li> 
+        <li class="nav-item mt-4"> 
+            <a class="nav-link text-danger" href="{{ path('app_logout') }}"> Déconnexion </a> 
+        </li> 
+    </ul>
+</div>
+{% endblock %}
