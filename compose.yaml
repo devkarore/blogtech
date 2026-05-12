@@ -10,6 +10,6 @@ services:
     volumes: 
       - carole_blogtech_db_data:/var/lib/mysql 
     ports: 
-      - "3307:3307" 
+      - "3307:3306" 
 volumes: 
   carole_blogtech_db_data:
